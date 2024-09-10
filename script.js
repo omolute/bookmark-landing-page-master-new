@@ -2,21 +2,37 @@
 var tab1 = document.getElementById('tab1');
 var tab2 = document.getElementById('tab2');
 var tab3 = document.getElementById('tab3');
+var title1 =  document.getElementById('bookmarking');
+var title2 =  document.getElementById('speedy');
+var title3 =  document.getElementById('easy');
+
 
 function tab1_display(){
     tab1.style.display = 'flex';
     tab2.style.display = 'none';
     tab3.style.display = 'none';
+    title1.className = 'title-focused';
+    title2.className  = 'title-unfocuased';
+    title3.className = 'title-unfocuased'
+
 }
 function tab2_display(){
     tab1.style.display = 'none';
     tab2.style.display = 'flex';
     tab3.style.display = 'none';
+    title1.className = 'title-unfocuased'
+    title2.className  = 'title-focused'
+    title3.className = 'title-unfocuased'
+
 }
 function tab3_display(){
     tab1.style.display = 'none';
     tab2.style.display = 'none';
     tab3.style.display = 'flex';
+    title1.className = 'title-unfocuased'
+    title2.className  = 'title-unfocuased'
+    title3.className = 'title-focused'
+
 }
 
 
